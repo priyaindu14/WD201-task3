@@ -25,7 +25,7 @@ const todoList = () => {
       list.forEach(element => {
         if (element.completed) {
             if(element.dueDate === today){
-                formatted.push("[x]" + element.title + " ");
+                formatted.push("[x] " + element.title + " ");
             }
             else{
             formatted.push("[x] " + element.title + " " + element.dueDate);
@@ -34,7 +34,7 @@ const todoList = () => {
         }
         else {
             if(element.dueDate === today){
-                formatted.push("[ ]" + element.title + " ");
+                formatted.push("[ ] " + element.title + " ");
             }
             else{
             formatted.push("[ ] " + element.title + " " + element.dueDate);
